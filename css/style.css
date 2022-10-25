@@ -1,0 +1,371 @@
+@font-face {
+    font-family: camptonSB;
+    src: url('../fonts/CamptonSemiBold.otf');
+}
+
+@font-face {
+    font-family: camptonL;
+    src: url('../fonts/CamptonLight.otf');
+}
+
+@font-face {
+    font-family: camptonBL;
+    src: url('../fonts/CamptonBlack.otf');
+}
+
+* {
+    font-family: camptonSB;
+}
+
+::selection {
+    background-color: #F4DAA9;
+}
+
+h1,
+h2,
+p,
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    padding: 2em 5em 0em 5em;
+    position: relative;
+    background: rgb(15, 15, 17);
+    background: linear-gradient(90deg, rgba(15, 15, 17, 1) 0%, rgba(30, 30, 33, 1) 25%, rgba(37, 38, 41, 1) 50%, rgba(30, 30, 33, 1) 75%, rgba(15, 15, 17, 1) 100%);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header img {
+    width: 70px;
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+nav {
+    margin-top: 2em;
+    margin-right: 5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8E8E90;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 300ms;
+    padding: 1em;
+}
+
+nav a:hover {
+    color: #F4DAA9;
+}
+
+
+/* ---------------------------------------------------- REUSABLE CODE ---------------------------------------------------- */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------------------------------------------- MAIN ---------------------------------------------------- */
+
+main {
+    width: 100%;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+}
+
+.hero-bg {
+    background: rgb(61, 62, 67);
+    background: radial-gradient(circle, rgb(55, 56, 61) 0%, rgb(14, 14, 16) 100%);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: -2.5em;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------- HERO CONTENT ---------------------------------------------------- */
+
+#hero {
+    width: 50vw;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#hero div {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+#hero div span {
+    height: 0.6em;
+    width: 70%;
+    background-color: #F4DAA9;
+}
+
+#hero div h3 {
+    color: #8E8E90;
+    text-transform: uppercase;
+    width: 7em;
+    font-size: 1.6em;
+    padding: 0;
+    margin: 0;
+}
+
+#hero h1 {
+    font-size: 18.5vw;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 9;
+    height: 0.85em;
+    transform: translateY(-0.1em);
+}
+
+#hero h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: end;
+    color: #F4DAA9;
+    z-index: 10;
+}
+
+
+/* ---------------------------------------------------- PROJECTS CONTENT ---------------------------------------------------- */
+
+.projects {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.projects-title {
+    position: absolute;
+    top: 0;
+    left: -0.7em;
+    height: 100%;
+    color: #8E8E90;
+    font-size: 5em;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+}
+
+.projects article {
+    width: 95%;
+    height: 100vh;
+}
+
+.projects .text {
+    background-color: #fff;
+    height: 80%;
+    width: 30%;
+    text-transform: uppercase;
+    flex-direction: column;
+    position: relative;
+}
+
+.projects .text h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.projects .text h3 {
+    font-family: camptonL;
+    text-align: center;
+    margin: 0;
+}
+
+.projects .text a {
+    position: absolute;
+    bottom: 5em;
+    text-transform: uppercase;
+    padding: 1.5em;
+    border-radius: 10em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transition: 300ms;
+}
+
+.projects .text a:hover {
+    background-color: #ddae57;
+}
+
+.projects .pics {
+    height: 80%;
+    width: 70%;
+}
+
+#pic1 {
+    background: rgb(48, 49, 49);
+    background: linear-gradient(90deg, rgba(48, 49, 49, 1) 0%, rgba(12, 10, 10, 1) 100%);
+}
+
+#pic2 {
+    background: rgb(157, 49, 40);
+    background: linear-gradient(90deg, rgba(157, 49, 40, 1) 0%, rgba(217, 152, 0, 1) 100%);
+}
+
+#pic3 {
+    background: rgb(84, 84, 84);
+    background: linear-gradient(90deg, rgba(84, 84, 84, 1) 0%, rgba(168, 168, 168, 1) 100%);
+}
+
+#pic4 {
+    background: rgb(236, 219, 212);
+    background: linear-gradient(90deg, rgba(236, 219, 212, 1) 0%, rgba(151, 63, 90, 1) 100%);
+}
+
+#pic5 {
+    background: rgb(244, 243, 245);
+    background: linear-gradient(90deg, rgba(244, 243, 245, 1) 0%, rgba(67, 68, 68, 1) 100%);
+}
+
+
+/* ---------------------------------------------------- ABOUT CONTENT ---------------------------------------------------- */
+
+#about {
+    position: relative;
+    width: 100%;
+    min-height: 3700px;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.about-container {
+    justify-content: flex-start;
+    position: absolute;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    width: 300%;
+    max-height: 100vh;
+}
+
+#about article {
+    height: 100vh;
+    min-width: 80em;
+    padding-left: 10em;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#about article div {
+    position: relative;
+    transform: translateX(-7em);
+}
+
+#about article div h1 {
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #8E8E90;
+}
+
+#about article span div {
+    height: 0.6em;
+    width: 100%;
+    background-color: #F4DAA9;
+}
+
+#about article p {
+    text-align: justify;
+    color: #fff;
+    font-family: camptonL;
+    line-height: 1.7em;
+    position: relative;
+    font-size: 1.3em;
+    width: 50%;
+}
+
+#about article p span {
+    color: #F4DAA9;
+    font-size: 1.1em;
+}
+
+.about-line {
+    position: absolute;
+    width: 0.2em;
+    height: 100%;
+    background-color: #F4DAA9;
+    left: -2em;
+}
+
+
+/* ---------------------------------------------------- CONTACT CONTENT ---------------------------------------------------- */
+
+#contact {
+    width: 100%;
+    min-height: 40vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+}
+
+#contact h1 {
+    color: #8E8E90;
+    font-size: 4em;
+}
+
+#contact a {
+    background-color: #efcd8f;
+    padding: 1em;
+    font-size: 1.2em;
+    color: #fff;
+    transition: 300ms;
+}
+
+#contact a:hover {
+    background-color: #ddae57;
+}
+
+
+/* ---------------------------------------------------- FOOTER ---------------------------------------------------- */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: #8E8E90 solid 1px;
+}
+
+footer h3 {
+    color: #8E8E90;
+}
+
+footer div a {
+    color: #F4DAA9;
+    font-size: 2em;
+    padding: 0.4em;
+    transition: 300ms;
+}
+
+footer div a:hover {
+    color: #ddae57;
+}
